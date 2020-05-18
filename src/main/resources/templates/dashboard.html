@@ -23,7 +23,7 @@
 
 			</div>
 			<div class="col-3">
-				<a type="button" th:href="@{index/(status=unlocked)}" class="btn btn-outline-danger">Unlock</a>
+				<a type="button" th:href="@{dashboard/(status=unlocked)}" class="btn btn-outline-danger">Unlock</a>
 			</div>
 			<div class="col-4">
 
@@ -33,7 +33,7 @@
 			</div>
 		</div>
 		<ul class="list-group mt-2">
-			<li th:each="password : ${allPassword}" class="list-group-item">
+			<li th:each="password : ${allPasswords}" class="list-group-item">
 				<div class="row">
 					<div class="col-6">
 						<span th:text=${password.name}></span>
