@@ -1,12 +1,12 @@
 ## Zeit Managment:
 
-04.05.2020 16:30 - 17:10
+04.05.2020 15:30 - 17:10
 Projekt erstellt, Konzept erabeitet
 
-11.05.2020 16:30 - 17:10
+11.05.2020 15:30 - 17:10
 Grunsätze vom Projekt angefangen zu implementieren
 
-11.05.2020 16:30 - 20:00
+11.05.2020 15:30 - 20:00
 Projekt abgeschlossen.
 
 Leider war die Zeit viel zu knapp bemessen. Trotz den 2h Überzeit wurden wir nicht fertig.
