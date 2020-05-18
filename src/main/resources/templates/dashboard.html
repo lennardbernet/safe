@@ -23,23 +23,32 @@
 
 			</div>
 			<div class="col-3">
-
+				<a type="button" th:href="@{index/(status=unlocked)}" class="btn btn-outline-danger">Unlock</a>
 			</div>
 			<div class="col-4">
 
 			</div>
 			<div class="col-2">
-				change password
+
 			</div>
 		</div>
 		<ul class="list-group mt-2">
-			<li class="list-group-item">test</li>
-			<li class="list-group-item">test</li>
+			<li th:each="password : ${allPassword}" class="list-group-item">
+				<div class="row">
+					<div class="col-6">
+						<span th:text=${password.name}></span>
+					</div>
+					<div class="col-6">
+						<span th:text=${password.password}></span>
+					</div>
+
+				</div>
+			</li>
 		</ul>
 		<div class="input-group mb-3">
 			<form class="input-group mt-3" th:action="@{/dashboard}" method="POST" th:object="${newPassword}">
 				<input type="text" class="form-control" placeholder="Username" th:name="username" th:value="${newPassword.name}">
-				<input type="text" class="form-control" placeholder="Password" th:name="password" th:value="${newPassword.password}">
+				<input type="password" class="form-control" placeholder="Password" th:name="password" th:value="${newPassword.password}">
 				<div class="input-group-append">
 					<button class="btn btn-outline-secondary" type="Submit" >Add Password</button>
 				</div>
