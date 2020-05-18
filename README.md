@@ -25,6 +25,7 @@ Unsere Projekt funktionert nicht. Sie müssen sich im Code zurecht finden
 Wir finden es sehr schade das wir so wenig Zeit für das Projekt bekommen haben. Der Code hat darunter stark gelitten. 
 Die Projekt Idee finden wir ansich sehr intressant und wir sind mit dem Produkt zufrieden. 
 
+Edit commits von a sind von Dario. Komischerweise wird teilweise nicht dariogeiser angezeigt, sondern a.
 
 ## Dario Gedanken
 Wir benutzen für das Login sha512 Verschlüsselung und für das Dashboard die AES Verschlüsselung.
