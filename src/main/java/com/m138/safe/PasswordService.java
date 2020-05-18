@@ -67,7 +67,8 @@ public class PasswordService {
 
     public ArrayList<Password> decrypt() {
         byte[] key = "123456789".getBytes();
-        ArrayList<Password> passwords = (ArrayList<Password>) em.createQuery("select p from Password").getResultList();
+        ArrayList<Password> passwords = (ArrayList<Password>) em.createQuery("select p from Password order by p.passwordid").getResultList();
+        passwords.remove(0);
         for (Password p : passwords) {
             try {
                 byte[] encryptedData = p.getPassword().getBytes();
