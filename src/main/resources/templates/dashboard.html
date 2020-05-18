@@ -10,7 +10,7 @@
 <meta name="author" content="">
 <link rel="icon" href="../../favicon.ico" />
 
-<title>Film finder</title>
+<title>Safe</title>
 
 <!-- Bootstrap core CSS -->
 <link href="../static/css/bootstrap.css" rel="stylesheet"
@@ -18,20 +18,9 @@
 </head>
 <body>
 	<div class="container mt-2">
-		<div class="row">
-			<div class="col-3">
 
-			</div>
-			<div class="col-3">
-				<a type="button" th:href="@{dashboard/(status=unlocked)}" class="btn btn-outline-danger">Unlock</a>
-			</div>
-			<div class="col-4">
+		<a type="button" th:href="@{dashboard/(status=unlocked)}" class="btn btn-outline-danger">Unlock</a>
 
-			</div>
-			<div class="col-2">
-
-			</div>
-		</div>
 		<ul class="list-group mt-2">
 			<li th:each="password : ${allPasswords}" class="list-group-item">
 				<div class="row">

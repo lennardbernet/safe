@@ -33,7 +33,7 @@ public class SafeController {
         System.out.println("postMapping login");
         System.out.println(password);
         //TODO db masterpasswort passwordService.login(password)
-        return "/dashboard";
+        return "redirect:dashboard";
     }
 
     @GetMapping("/dashboard")
