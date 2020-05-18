@@ -20,10 +20,10 @@
 	<div class="container mt-2">
 		<div class="row">
 			<div class="col-3">
-				Safe is Open
+
 			</div>
 			<div class="col-3">
-				<button type="button" class="btn btn-outline-danger">Lock</button>
+
 			</div>
 			<div class="col-4">
 
@@ -36,6 +36,15 @@
 			<li class="list-group-item">test</li>
 			<li class="list-group-item">test</li>
 		</ul>
+		<div class="input-group mb-3">
+			<form class="input-group mt-3" th:action="@{/dashboard}" method="POST" th:object="${newPassword}">
+				<input type="text" class="form-control" placeholder="Username" th:name="username" th:value="${newPassword.name}">
+				<input type="text" class="form-control" placeholder="Password" th:name="password" th:value="${newPassword.password}">
+				<div class="input-group-append">
+					<button class="btn btn-outline-secondary" type="Submit" >Add Password</button>
+				</div>
+			</form>
+		</div>
 	</div>
 	<!-- /container -->
 	<!-- Bootstrap core JavaScript
